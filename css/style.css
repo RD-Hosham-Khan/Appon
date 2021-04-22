@@ -157,6 +157,7 @@ img{
     display: inline-block;
     line-height: 19px;
     padding: 10px 25px;
+    padding-left: 55px;
     text-align: left;
     border-radius: 3%;
     text-transform: uppercase;
@@ -171,6 +172,20 @@ img{
 
 .bg .menu .text .button a:last-of-type{
     margin-right: 0;
+}
+
+.bg .menu .text .button a i{
+    font-size: 35px;
+    position: absolute;
+    right: 327px;
+    bottom: 142px;
+}
+
+.bg .menu .text .button a .fa-android{
+    font-size: 35px;
+    position: absolute;
+    right: 546px;
+    bottom: 142px;
 }
 
 .bg .menu .text .button a h6{
@@ -364,6 +379,7 @@ img{
 .feature-bg .feature .services ul li a{
     color: #353535;
     display: block;
+    padding-top: 20px;
     padding-left: 51px;
     text-align: left;
     text-transform: uppercase;
@@ -399,7 +415,7 @@ img{
     position: absolute;
     text-align: center;
     left: 0;
-    top: 5px;
+    top: 24px;
     color: #353535;
     transition: all linear 0.5s;
 }
@@ -411,17 +427,29 @@ img{
 .feature-bg .feature .services ul li .line-1{
     width: 270px;
     height: 1px;
+    position: absolute;
+    left: 0;
     display: inline-block;
-    color: #353535;
-    margin-bottom: 20px;
+    background: #353535;
+    transition: all linear 0.5s;
+}
+
+.feature-bg .feature .services ul li:hover .line-1{
+    background: var(--clr);
 }
 
 .feature-bg .feature .services ul li .line-2{
     width: 370px;
     height: 1px;
-    color: #353535;
+    position: absolute;
+    left: 0;
+    background: #353535;
     display: inline-block;
-    margin-bottom: 20px;
+    transition: all linear 0.5s;
+}
+
+.feature-bg .feature .services ul li:hover .line-2{
+    background: var(--clr);
 }
 
 .feature-bg .feature .image{
@@ -1114,10 +1142,9 @@ img{
     height: 30px;
     position: absolute;
     background: rgb(255, 255, 255);
-    left: 49.5%;
-    top: 233px;
-    transform: translateX(-50%);
-    rotate: 45deg;
+    left: 50%;
+    top: 222px;
+    transform: translateX(-50%) rotate(45deg);
     border-radius: 15%;
 }
 
